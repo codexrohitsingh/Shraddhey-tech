@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera, Environment, Float } from '@react-three/drei';
+import { ProjectGallery3D } from '../components/ProjectGallery3D';
 
 const previewImages = [
   '20160303_185155-removebg-preview.png',
@@ -133,24 +134,8 @@ const SolutionsPage = () => {
           >
             Our Projects
           </motion.h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {previewImages.map((image, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.08 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.05, y: -5 }}
-                className="glass-card overflow-hidden"
-              >
-                <img
-                  src={`/${image}`}
-                  alt={`Preview ${index + 1}`}
-                  className="w-full h-48 object-contain p-4"
-                />
-              </motion.div>
-            ))}
+          <div className="h-[600px]">
+            <ProjectGallery3D sectionColor="#080808" />
           </div>
         </div>
       </section>
