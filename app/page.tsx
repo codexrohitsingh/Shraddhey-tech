@@ -113,12 +113,12 @@ const HeroSection = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 text-gray-900 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 mt-2 text-gray-900 leading-tight">
               Precision Engineering
               <br />
-              <span className="text-blue-600">
+              <div className="text-blue-600">
                 for the Future of Manufacturing
-              </span>
+              </div>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-10 leading-relaxed">
               Industrial automation systems engineered for scale, efficiency,
