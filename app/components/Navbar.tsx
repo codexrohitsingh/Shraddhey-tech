@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 gap-2 transition-all duration-300 ${
+      className={`fixed top-0  left-0 right-0 z-50 gap-2  transition-all duration-300 ${
         scrolled
           ? "backdrop-blur-2xl bg-[rgba(248,243,243,0.43)] border-b border-[rgba(255,255,255,0.08)]"
           : "bg-transparent"
@@ -34,7 +34,7 @@ const Navbar = () => {
             <img
               src="/logo.png"
               alt="Shraddheytech"
-              className="h-25 w-auto transition-all"
+              className="h-auto w-40 transition-all"
             />
           </a>
           <div className="hidden md:flex items-center gap-8">
